@@ -940,7 +940,7 @@ else
             while wait(120) do
                 refreshLiked()
             end
-        end)(); Notify("R-Spotify has loaded\nMade by horror#7132", "normal", 3)
+        end)(); Notify("R-Spotify has loaded\nMade by moe", "normal", 3)
     end
 end
 

@@ -937,4 +937,3 @@ else
             end
         end)(); Notify("R-Spotify has loaded\nMade by moe lol", "normal", 3)
     end
-end

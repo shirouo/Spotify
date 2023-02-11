@@ -1,3 +1,4 @@
+
 repeat wait() until game:IsLoaded();
 if getgenv()["SpotifyUI"] then if game["CoreGui"]:FindFirstChild("Spotify"):Destroy() then game["CoreGui"]["Spotify"]:Destroy() end; warn("[SPOTIFY]: Spotify UI already loaded!") end
 getgenv()["Token"] = _G["SpotifyConfig"]["Token"];
@@ -401,10 +402,6 @@ if not checkToken() then
     Notify("Invalid Token, please update it!", "error", 3)
 else
     Notify("Valid Token!\nChecking Premium..", "normal", 3);
-    if (not apiRequests["getProfile"]()["premium"]) or (apiRequests["getProfile"]()["premium"] == nil) then
-        Notify("Not a Spotify Premium user!\nLoading V1..", "error", 3)
-        loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/thehorrorevent/Spotify/main/SpotifyV1.lua", true))()
-    else
         Notify("You're a Spotify Premium user!", "normal", 3)
         Device = apiRequests["getDevice"](); apiRequests["nowplaying"](); apiRequests["playlists"](); getgenv()["SpotifyUI"] = true;
  
@@ -939,7 +936,6 @@ else
             while wait(120) do
                 refreshLiked()
             end
-        end)(); Notify("R-Spotify has loaded\nMade by moe", "normal", 3)
+        end)(); Notify("R-Spotify has loaded\nMade by moe lol", "normal", 3)
     end
 end
-

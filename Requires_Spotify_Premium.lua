@@ -1,4 +1,3 @@
-
 repeat wait() until game:IsLoaded();
 if getgenv()["SpotifyUI"] then if game["CoreGui"]:FindFirstChild("Spotify"):Destroy() then game["CoreGui"]["Spotify"]:Destroy() end; warn("[SPOTIFY]: Spotify UI already loaded!") end
 getgenv()["Token"] = _G["SpotifyConfig"]["Token"];
